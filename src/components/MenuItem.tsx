@@ -1,4 +1,5 @@
-import { MenuItem } from "../types";
+ 
+import { MenuItem } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
   addToCart: () => void;
 };
 
-const MenuItem = ({ menuItem, addToCart }: Props) => {
+const Menuitem = ({ menuItem, addToCart }: Props) => {
   return (
     <Card className="cursor-pointer" onClick={addToCart}>
       <CardHeader>
@@ -19,4 +20,4 @@ const MenuItem = ({ menuItem, addToCart }: Props) => {
   );
 };
 
-export default MenuItem;
+export default Menuitem;
